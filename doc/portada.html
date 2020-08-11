@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Transportes Seseña</title>
+        <meta charset="UTF-8">
+        <link rel="styleSheet" href = "../css/portada_styles.css" type="text/css">   
+        <script src="../js/select_line.js" type="text/javascript"></script>  
+    </head>
+    <center><body>
+        <div id="pagina"> <!-- marco para la pagina-->
+            <div id = "contenido">
+                <h1>Transportes Seseña</h1>
+                <h2>"Hola, Bienvenid@ la red de transportes de Seseña"</h2>
+            </div>
+            <form>
+                <p><h3>Seleccione un Municipio y una linea</h3></p>
+                <select name="bus_lines" onchange="eligeLinea(this.form)">  
+                    <option selected>Municipio</option>
+                    <option>Seseña</option>
+                    <option></option>
+                </select>
+                <select name="lista_lineas" onchange="mostrarImagen(this.form)">
+                    <option></option>
+                </select>
+                <div><img style="display: none" name="imagen" id=" imagen" alt="Imagenes"></div>               
+            </form> 
+
+            <div id="aditional"><p>2020 &copy; Lionel Sanchez</p></div>
+        </div>  
+    </body></center>
+</html>
