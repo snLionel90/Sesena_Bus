@@ -1,14 +1,17 @@
 var lineas = new Array()
-lineas [1] = ["110 Urbano Seseña", "VAC231 Madrid-Seseña","423 Madrid(Est. Sur)-Aranjuez",
-                "429 Madrid(Legazpi)-Aranjuez (PAU Montaña)","419 Madrid(Est.Sur) - Quintanar de la Orden","N402 (Noctuno) Madrid(Atocha) - Aranjuez"]
+lineas [1] = ["Seleccione una linea","110 Urbano Seseña", "VAC231 Madrid-Seseña","423 Madrid(Est. Sur)-Aranjuez",
+                "429 Madrid(Legazpi)-Aranjuez (PAU Montaña)","VAC158 Madrid(Est.Sur) - Quintanar de la Orden","N402 (Noctuno) Madrid(Atocha) - Aranjuez"]
 
 var imagenes = new Array()
-imagenes[1] = new Array()
-imagenes[1][0] = ["../imgs/ruta_urbano_seseña.jpg"]
-imagenes[1][1] = ["../imgs/interbus.jpg"]
-imagenes[1][2] = ["../imgs/linea423.jpg"]
-imagenes[1][3] = ["../imgs/linea429.jpg"] 
-imagenes[1][4] = ["../imgs/linea423.jpg"] 
+    imagenes[1] = new Array()
+    imagenes[1][0] = []
+    imagenes[1][1] = ["../imgs/ruta_urbano_seseña.jpg"]
+    imagenes[1][2] = ["../imgs/interbus.jpg"]
+    imagenes[1][3] = ["../imgs/linea423.jpg"]
+    imagenes[1][4] = ["../imgs/linea429.jpg"] 
+    imagenes[1][5] = ["../imgs/linea419.jpg"]
+    imagenes[1][6] = ["../imgs/lineaN402.jpg"]
+
 
 function eligeLinea(lista){
     var lineSelection = lista.bus_lines.selectedIndex;
