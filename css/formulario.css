@@ -1,0 +1,31 @@
+#contenedorform {
+  width:500px; 
+  margin-left:10px; 
+  margin-top:10px;
+  background-color:navajowhite;
+  border:1px solid #CCC;
+  padding:10px 0 10px 0;
+  
+}
+
+#contenedorform form p {
+  width:200px; 
+  float:center;
+  font-family:verdana;
+  font-size:16px;
+}
+.botonsubmit {
+  color:green;
+  background-color:#bbb;
+  border: 1px solid #fff;
+  font-size:23px;
+  font-family:Arial, Helvetica, sans-serif;
+  
+  
+}
+.nverde{color:green;background-color:pink;}
+
+h1{
+  font-style: oblique;
+}
+

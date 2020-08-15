@@ -1,5 +1,10 @@
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
     <head>
+        <link rel=" Shortcut Icon" href="./imgs/icon.png" type="image/x-icon"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Seseña Transportes es una web deicada para los ciudadanos que necesiten consultar,
+        una linea de autobus para ver horarios, la ruta y el estado del servicio ,asi como realizar un comentario" />
+
         <title>Transportes Seseña</title>
         <meta charset="UTF-8">
         <link rel="styleSheet" href = "../css/portada_styles.css" type="text/css">   
@@ -12,10 +17,11 @@
                 <h2>"Hola, Bienvenid@ la red de transportes de Seseña"</h2>
             </div>
             <form>
-                <p><h3>Seleccione un Municipio y una linea</h3></p>
+                <p><h3>Seleccione una linea a consultar</h3></p>
                 <select name="bus_lines" onchange="eligeLinea(this.form)">  
                     <option selected>Seleccione un Municipio</option>
                     <option>Seseña</option>
+                    <option>Madrid</option>
                     
                 </select>
                 <select name="lista_lineas" onchange="mostrarImagen(this.form)">
@@ -25,6 +31,7 @@
             </form> 
 
             <div id="aditional"><p>2020 &copy; Lionel Sanchez</p></div>
+            
         </div>  
     </body></center>
 </html>
