@@ -1,9 +1,10 @@
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
-
+<DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" http://www.w3.org/TR/html4/loose.dtd>
+<html>
   <head>
     <title>formulario</title>
+    <META name="Author" lang="es" content="Lionel Sanchez">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="description" content="Seseña Transportes es una web deicada para los ciudadanos que necesiten consultar,
+    <meta name="description" content="Seseña Transportes es una web dedicada para los ciudadanos que necesiten consultar,
      una linea de autobus para ver horarios, la ruta y el estado del servicio ,asi como realizar un comentario" />
 
    <link rel="StyleSheet" href="../css/formulario.css" type="text/css">
@@ -12,21 +13,26 @@
   </head>
   <center><body background="../imgs/portada.jpg">
     <div id="contenedorform">
-      <p><h1>Deje un comentario, queja o sugerencia</h1></p>
-      <form method="post" action="#">
-        
-        <label>Ingrese nombre:</label>
-        <input type="text" class="nverde" name="nombre" size="30"><br>
-        <label>Ingrese Apellido:</<label>
-        <input type="text" class="nverde" name="Apellido" size="30"><br>
-        <label>Escriba un comentario:</<label>
-        <textarea name="comentarios" cols="30" rows="5"></textarea> 
-        <br>
-         <input class="botonsubmit" type="submit" value="confirmar">
+      <form name="formulario" method="post" action=# >
+          <fieldset>
+            <p><h1>Deje un comentario, queja o sugerencia</h1></p>
+            <label for="nombre">Ingrese nombre:</label>
+            <input type="text" name="nombre" placeholder = "nombre" required><br>
+
+            <label for="apellido">Ingrese Apellido:</label>
+            <input type="text" name="apellido" placeholder = "apellido"  required><br> 
+            <br>
+            <label>Escriba un comentario:</<label>
+            <textarea name="comentario" required></textarea> 
+            <br>
+          <p><input type="submit" value="Enviar"/></p>
+        </fieldset>
       </form>
      </div>
+     <button class = "volver" ><a href="portada.html">Volver a horarios</a></button>
      <di>
        <p>Los datos quedaran almacenados en un fichero local</p>
      </di>
+     <div id="aditional"><p>2020 &copy; Lionel Sanchez</p></div>
    </body></center> 
 </html>

@@ -31,5 +31,10 @@ h2{
     position: bottom;
     font-size: large;
 }
-
+button{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    font-style: oblique;
+    background-color: lightcoral;
+}
 

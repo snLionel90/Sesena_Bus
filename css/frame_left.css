@@ -15,3 +15,10 @@ h3{
     font-style: oblique;
     color: darkmagenta;
 }
+label{
+    font-family: 'DS-Digital'; 
+    width: 200px; 
+    font-size: 45px; 
+    color: green; 
+    text-align: left;
+}
