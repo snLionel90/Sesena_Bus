@@ -1,37 +1,19 @@
 <?php
-    
-    $hostname='localhost';
-    $database='comentarios';
-    $username='root';
-    $password='';
+	//conexion con la base de datos y el servidor
+	$link = mysql_connect("localhost","root","") or die("<h2>No se encuentra el servidor</h2>");
+	$db = mysql_select_db("comentarios",$link) or die("<h2>Error de Conexion</h2>");
 
-    $conexion=new mysqli($hostname,$username,$password,$database)or die ("No es posible conectarse al servidor de Base de datos");
+	//obtenemos los valores del formulario
+	$nombres = $_POST['nombreuser'];
+	$apellidos = $_POST['apellidosuser'];
+	$comentario = $_POST['comuser'];
 
-    $db = mysqli_select_db( $conexion, $database ) or die ( "Upps! Parece ser que no es posible conectarse a la base de datos" );
+	//Obtiene la longitus de un string
+	$req = (strlen($nombres)*strlen($apellidos)*strlen($comentario)) or die("No se han llenado todos los campos");
 
-    //recovert tejklbsdlbjkñsdbj
-    if (isset($_POST["nombre"],
-    $_POST["apellido"],
-    $_POST["comentario"])and
-    $_POST["nombre"]!="" and
-    $_POST["apellido"]!="" and
-    $_POST["comentario"]!="" ){
-
-    $nombre = $_POST["nombre"];
-    $apellido = $_POST["apellido"];
-    $comentario = $_POST["comentario"];
-    
-    //sentence sql
-    $sql = "INSERT INTO usuarios (id,nombre,apellido,comentario) VALUES ('0','$nombre','$apellido','$comentario')";
-
-    }else{
-        echo '<p>Porfabor completa el formulario</p>';
-    }
-
-    if(mysql_query($sql)){
-        echo "<p>Comentario enviado correctamente</p>";
-    }else{
-        echo "<p>Error al enviar el comentario..</p>";
-    }
-    
+	//ingresamos la informacion a la base de datos
+	mysql_query("INSERT INTO datos VALUES('','$nombres','$apellidos','$comentario')",$link) or die("<h2>Error Guardando los datos</h2>");
+	echo'
+		envio exitoso
+	'
 ?>
