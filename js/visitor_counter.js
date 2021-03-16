@@ -37,8 +37,6 @@ function counter_vis(){
     document.getElementById('contador').innerHTML=count+"";
     
     y = setcookie("contador",count,1);
-
-
 }
 
 window.onload=function(){

@@ -1,6 +1,7 @@
 var lineas = new Array()
 lineas [1] = ["Seleccione una linea","110 Urbano Seseña", "VAC231 Madrid-Seseña","423 Madrid(Est. Sur)-Aranjuez",
-                "429 Madrid(Legazpi)-Aranjuez (PAU Montaña)","VAC158 Madrid(Est.Sur) - Quintanar de la Orden","N402 (Noctuno) Madrid(Atocha) - Aranjuez"]
+                "429 Madrid(Legazpi)-Aranjuez (PAU Montaña)","VAC158 Madrid(Est.Sur) - Quintanar de la Orden",
+                "N402 (Noctuno) Madrid(Atocha) - Aranjuez"]
 
 var imagenes = new Array()
     imagenes[1] = new Array()
