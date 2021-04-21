@@ -6,12 +6,12 @@ lineas [1] = ["Seleccione una linea","110 Urbano Seseña", "VAC231 Madrid-Seseñ
 var imagenes = new Array()
     imagenes[1] = new Array()
     imagenes[1][0] = []
-    imagenes[1][1] = ["../imgs/ruta_urbano_seseña.jpg"]
-    imagenes[1][2] = ["../imgs/interbus.jpg"]
-    imagenes[1][3] = ["../imgs/linea423.jpg"]
-    imagenes[1][4] = ["../imgs/linea429.jpg"] 
-    imagenes[1][5] = ["../imgs/linea419.jpg"]
-    imagenes[1][6] = ["../imgs/lineaN402.jpg"]
+    imagenes[1][1] = ["./imgs/ruta_urbano_seseña.jpg"]
+    imagenes[1][2] = ["./imgs/interbus.jpg"]
+    imagenes[1][3] = ["./imgs/linea423.jpg"]
+    imagenes[1][4] = ["./imgs/linea429.jpg"] 
+    imagenes[1][5] = ["./imgs/linea419.jpg"]
+    imagenes[1][6] = ["./imgs/lineaN402.jpg"]
 
 
 function eligeLinea(lista){

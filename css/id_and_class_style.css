@@ -1,0 +1,33 @@
+#contenido{
+    position: relative;
+}
+
+#aditional{
+    font-style: oblique;
+    font-family: sans-serif;
+    position: bottom;
+    font-size: large;
+}
+
+.browser{
+    width:60%;
+    background-color: aliceblue;
+    border-color: aqua;
+    border-style: groove;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    font-size: large;
+}
+
+.date{
+    width:60%;
+    background-color: rgba(240, 248, 255, 0.678);
+    border-color: rgb(2, 70, 70);
+    border-style: groove;
+    font-family: 'DS-Digital'; 
+    width: 200px; 
+    font-size: 45px; 
+    color: green; 
+    text-align: left;
+    position: relative;
+}
